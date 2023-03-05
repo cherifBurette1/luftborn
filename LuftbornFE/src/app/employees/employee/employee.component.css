@@ -1,0 +1,13 @@
+.my-custom-class .tooltip-inner {
+    background-color: darkgreen;
+    font-size: 125%;
+  }
+  .my-custom-class .arrow::before {
+    border-top-color: darkgreen;
+  }
+  .btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width:100%;  
+}

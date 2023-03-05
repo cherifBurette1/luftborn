@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+		<Configurations>Debug;Release;NoMigrationsDebug</Configurations>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>bin\$(Configuration)\luftborn.Api.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NoMigrationsDebug|AnyCPU'">
+		<DocumentationFile>bin\$(Configuration)\luftborn.Api.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<EmbeddedResource Include="SwaggerIndex.html" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Hangfire.AspNetCore" Version="1.7.11" />
+		<PackageReference Include="Hangfire.Core" Version="1.7.11" />
+		<PackageReference Include="Hangfire.Redis.StackExchange" Version="1.8.4" />
+		<PackageReference Include="Hangfire.SqlServer" Version="1.7.11" />
+		<PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.5" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.StackExchangeRedis" Version="3.1.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.8" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.5" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+		<PackageReference Include="MiniProfiler.AspNetCore.Mvc" Version="4.2.1" />
+		<PackageReference Include="StackExchange.Redis" Version="2.1.58" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+	</ItemGroup>
+
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="Static\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Common\luftborn.Ground\luftborn.Ground.csproj" />
+	  <ProjectReference Include="..\..\Core\luftborn.Data\luftborn.Data\luftborn.Data.csproj" />
+	  <ProjectReference Include="..\..\Core\luftborn.DTO\luftborn.DTO.csproj" />
+	  <ProjectReference Include="..\..\Core\luftborn.Service\luftborn.Service.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\luftborn.Presistance\luftborn.Presistance.csproj" />
+	</ItemGroup>
+
+	<Target Name="IncludeDocFile" BeforeTargets="PrepareForPublish">
+		<ItemGroup Condition=" '$(DocumentationFile)' != '' ">
+			<_DocumentationFile Include="$(DocumentationFile)" />
+			<ContentWithTargetPath Include="@(_DocumentationFile->'%(FullPath)')" RelativePath="%(_DocumentationFile.Identity)" TargetPath="%(_DocumentationFile.Filename)%(_DocumentationFile.Extension)" CopyToPublishDirectory="PreserveNewest" />
+		</ItemGroup>
+	</Target>
+
+	<Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+		<ItemGroup>
+			<ReferencePath Condition="'%(FileName)' == 'StackExchange.Redis.Strongname'">
+				<Aliases>signed</Aliases>
+			</ReferencePath>
+		</ItemGroup>
+	</Target>
+
+</Project>

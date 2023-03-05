@@ -1,0 +1,16 @@
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\obj\Debug\netcoreapp3.1\luftborn.Data.csproj.AssemblyReference.cache
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\obj\Debug\netcoreapp3.1\luftborn.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\obj\Debug\netcoreapp3.1\luftborn.Data.AssemblyInfoInputs.cache
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\obj\Debug\netcoreapp3.1\luftborn.Data.AssemblyInfo.cs
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\obj\Debug\netcoreapp3.1\luftborn.Data.csproj.CoreCompileInputs.cache
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\bin\Debug\netcoreapp3.1\luftborn.Data.deps.json
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\bin\Debug\netcoreapp3.1\luftborn.Data.dll
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\bin\Debug\netcoreapp3.1\luftborn.Data.pdb
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\bin\Debug\netcoreapp3.1\luftborn.Ground.dll
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\bin\Debug\netcoreapp3.1\luftborn.Language.dll
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\bin\Debug\netcoreapp3.1\luftborn.Ground.pdb
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\bin\Debug\netcoreapp3.1\luftborn.Language.pdb
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\bin\Debug\netcoreapp3.1\ar-EG\luftborn.Language.resources.dll
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\obj\Debug\netcoreapp3.1\luftborn.Data.csproj.CopyComplete
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\obj\Debug\netcoreapp3.1\luftborn.Data.dll
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.Data\luftborn.Data\obj\Debug\netcoreapp3.1\luftborn.Data.pdb

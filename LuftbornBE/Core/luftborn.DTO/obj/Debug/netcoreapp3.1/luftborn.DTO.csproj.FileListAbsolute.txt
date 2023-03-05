@@ -1,0 +1,10 @@
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\bin\Debug\netcoreapp3.1\luftborn.DTO.deps.json
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\bin\Debug\netcoreapp3.1\luftborn.DTO.dll
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\bin\Debug\netcoreapp3.1\luftborn.DTO.pdb
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\obj\Debug\netcoreapp3.1\luftborn.DTO.csproj.AssemblyReference.cache
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\obj\Debug\netcoreapp3.1\luftborn.DTO.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\obj\Debug\netcoreapp3.1\luftborn.DTO.AssemblyInfoInputs.cache
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\obj\Debug\netcoreapp3.1\luftborn.DTO.AssemblyInfo.cs
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\obj\Debug\netcoreapp3.1\luftborn.DTO.csproj.CoreCompileInputs.cache
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\obj\Debug\netcoreapp3.1\luftborn.DTO.dll
+E:\Coding project\luftborn\LuftbornBE\Core\luftborn.DTO\obj\Debug\netcoreapp3.1\luftborn.DTO.pdb

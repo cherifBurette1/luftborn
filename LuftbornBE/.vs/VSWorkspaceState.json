@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Core",
+    "\\Core\\luftborn.Data",
+    "\\luftborn",
+    "\\Presentation",
+    "\\Presentation\\luftborn.Api",
+    "\\Presentation\\luftborn.Api\\Controllers",
+    "\\Presentation\\luftborn.Api\\Controllers\\Features",
+    "\\Presentation\\luftborn.Api\\Controllers\\Features\\Employee"
+  ],
+  "SelectedNode": "\\luftborn\\luftborn.sln",
+  "PreviewInSolutionExplorer": false
+}

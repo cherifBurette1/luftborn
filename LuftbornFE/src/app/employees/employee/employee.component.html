@@ -1,0 +1,60 @@
+<div class="ngForm">
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+  <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="service.formData.id">
+  <div class="form-group">
+    <label>Title</label>
+    <input name="Title" #FullName="ngModel" [(ngModel)]="service.formData.title" class="form-control" required pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$" required [class.is-invalid]="FullName.invalid && FullName.touched">
+    <div class="validation-error" *ngIf="FullName.errors && FullName.touched"> 
+      <small class="text-danger" *ngIf="FullName.errors.required">Title is required</small>
+      <small class="text-danger" *ngIf="FullName.errors.pattern">Title should contain only English letters or numbers
+      </small>
+  </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col">
+     
+      <select name="Category" #EMPCode="ngModel" required [class.is-invalid]="EMPCode.invalid && EMPCode.touched" [(ngModel)]="service.formData.category" class="form-select">
+        <option selected value="">Category</option>
+        <option *ngFor="let cat of Category">{{cat}}</option>
+    </select>
+    <small class="text-danger" [class.d-none]="EMPCode.valid || EMPCode.untouched">Please choose a category</small>
+      </div>
+      <div class="col">
+      <select name="Tags" #Mobile="ngModel" [(ngModel)]="service.formData.tags" class="form-select">
+        <option selected value="">Tag</option>
+        <option *ngFor="let tg of Tag">{{tg}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input  #description name="Description" #Position="ngModel" maxlength="144" [(ngModel)]="service.formData.description" class="form-control">
+    <div  class="form-text text-muted">
+      {{ description.value.length }} /144
+  </div>
+  </div>
+  <ng-container [ngSwitch]="onChangeAddEdit(form)">
+    <ng-container *ngSwitchCase="'1'">  <div class="form-group">
+      <button (click)="insertRecord(form)" type="submit" [disabled]="form.invalid" class="btn btn-default btn-lg btn-block btn-xl" >Add item</button>
+  </div></ng-container>
+    <ng-container *ngSwitchCase="'2'">  
+      <div class="row">
+        <div class="col">
+          <div class="form-group"> 
+            <button (click)="resetForm()" class="btn btn-outline-danger btn-lg btn-block btn-xl" >Cancel</button>
+        </div> 
+      </div>
+      <div class="col">
+          <div class="form-group"> 
+            <button (click)="updateRecord(form)" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-xl" >Update</button>
+        </div>
+        </div>
+      </div>
+    </ng-container>
+   
+  </ng-container>
+ <!--  <div class="form-group"> 
+      <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block" >Add item</button>
+  </div> -->
+</form>

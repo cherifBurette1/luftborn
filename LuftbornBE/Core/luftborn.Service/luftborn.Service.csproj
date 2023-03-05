@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Configurations>Debug;Release;NoMigrationsDebug</Configurations>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+		<PackageReference Include="MiniProfiler.AspNetCore" Version="4.1.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Common\luftborn.Ground\luftborn.Ground.csproj" />
+	  <ProjectReference Include="..\luftborn.Data\luftborn.Data\luftborn.Data.csproj" />
+	  <ProjectReference Include="..\luftborn.DTO\luftborn.DTO.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Feature\Common\Implementation\" />
+	  <Folder Include="Feature\Common\Interfaces\Services\" />
+	</ItemGroup>
+</Project>

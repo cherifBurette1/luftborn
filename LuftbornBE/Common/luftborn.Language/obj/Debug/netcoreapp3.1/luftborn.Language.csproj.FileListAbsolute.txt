@@ -1,0 +1,15 @@
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\bin\Debug\netcoreapp3.1\luftborn.Language.deps.json
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\bin\Debug\netcoreapp3.1\luftborn.Language.dll
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\bin\Debug\netcoreapp3.1\luftborn.Language.pdb
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\bin\Debug\netcoreapp3.1\ar-EG\luftborn.Language.resources.dll
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.csproj.AssemblyReference.cache
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.Resources.Resource.resources
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.Resources.Resource.ar-EG.resources
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.csproj.GenerateResource.cache
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.AssemblyInfoInputs.cache
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.AssemblyInfo.cs
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.csproj.CoreCompileInputs.cache
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\ar-EG\luftborn.Language.resources.dll
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.dll
+E:\Coding project\luftborn\LuftbornBE\Common\luftborn.Language\obj\Debug\netcoreapp3.1\luftborn.Language.pdb

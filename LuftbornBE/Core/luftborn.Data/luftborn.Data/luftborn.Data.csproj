@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Configurations>Debug;Release;NoMigrationsDebug</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="3.1.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Common\luftborn.Ground\luftborn.Ground.csproj" />
+	  <ProjectReference Include="..\..\..\Common\luftborn.Language\luftborn.Language.csproj" />
+	</ItemGroup>
+
+</Project>

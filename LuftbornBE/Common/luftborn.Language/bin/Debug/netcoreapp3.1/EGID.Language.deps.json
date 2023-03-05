@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "EGID.Language/1.0.0": {
+        "runtime": {
+          "EGID.Language.dll": {}
+        },
+        "resources": {
+          "ar-EG/EGID.Language.resources.dll": {
+            "locale": "ar-EG"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EGID.Language/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

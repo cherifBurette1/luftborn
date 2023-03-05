@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EGID.Api</name>
+    </assembly>
+    <members>
+        <member name="T:EGID.Api.Background.EGIDBackgroundConfiguration">
+            <summary>
+            EGIDBackgroundConfiguration
+            </summary>
+        </member>
+        <member name="M:EGID.Api.Background.EGIDBackgroundConfiguration.#ctor(System.Lazy{Hangfire.IBackgroundJobClient},System.Lazy{Hangfire.IRecurringJobManager})">
+            <summary>
+            EGIDBackgroundConfiguration
+            </summary>
+            <param name="backgroundJobClient"></param>
+            <param name="recurringJobManager"></param>
+        </member>
+        <member name="M:EGID.Api.Background.EGIDBackgroundConfiguration.StartJobs(EGID.Service.Features.Common.Interfaces.IEGIDEntities,EGID.Service.Features.Common.Interfaces.Helpers.IBackgroundSchedular)">
+            <summary>
+            StartJobs
+            </summary>
+            <param name="context"></param>
+            <param name="schedular"></param>
+        </member>
+        <member name="T:EGID.Api.Background.IEGIDBackgroundConfiguration">
+            <summary>
+            IEGIDBackgroundConfiguration
+            </summary>
+        </member>
+        <member name="M:EGID.Api.Background.IEGIDBackgroundConfiguration.StartJobs(EGID.Service.Features.Common.Interfaces.IEGIDEntities,EGID.Service.Features.Common.Interfaces.Helpers.IBackgroundSchedular)">
+            <summary>
+            StartJobs
+            </summary>
+            <param name="context"></param>
+            <param name="schedular"></param>
+        </member>
+        <member name="M:EGID.Api.Controllers.BrokerController.#ctor(System.Lazy{EGID.Service.Feature.Broker.Interfaces.Services.IBrokerService})">
+            <summary>
+            Academic-Level Constructor
+            </summary>
+            <param name="brokerService"></param>
+        </member>
+        <member name="P:EGID.Api.Controllers.BrokerController.BrokerService">
+            <summary>
+            Get list of brokers
+            </summary>
+            <returns>list of brokers</returns>
+        </member>
+        <member name="M:EGID.Api.Controllers.OrderController.#ctor(System.Lazy{EGID.Service.Feature.Orders.Interfaces.Services.IOrderService})">
+            <summary>
+            Academic-Level Constructor
+            </summary>
+            <param name="orderService"></param>
+        </member>
+        <member name="M:EGID.Api.Controllers.OrderController.GetsOrder(EGID.DTO.Models.DTOOrder)">
+            <summary>
+            save order
+            </summary>
+            <returns>successs</returns>
+        </member>
+        <member name="M:EGID.Api.Controllers.OrderController.GetOrders">
+            <summary>
+            gets list of order
+            </summary>
+            <returns>list of order</returns>
+        </member>
+        <member name="M:EGID.Api.Controllers.PersonController.#ctor(System.Lazy{EGID.Service.Feature.Person.Interfaces.Services.IPersonService})">
+            <summary>
+            Academic-Level Constructor
+            </summary>
+            <param name="stocksService"></param>
+        </member>
+        <member name="P:EGID.Api.Controllers.PersonController.PersonService">
+            <summary>
+            Get list of stocks
+            </summary>
+            <returns>list of stocks</returns>
+        </member>
+        <member name="T:EGID.Api.Controllers.BaseController">
+            <summary>
+            BaseController
+            </summary>
+        </member>
+        <member name="M:EGID.Api.Controllers.BaseController.GetErrorResult(EGID.Service.Models.ServiceResultBase)">
+            <summary>
+            Get result with status code based on model errors
+            </summary>
+            <param name="result">result</param>
+            <returns>action result</returns>
+        </member>
+        <member name="M:EGID.Api.Controllers.BaseController.GetApiResponse``1(EGID.Service.Models.ServiceResultList{``0})">
+            <summary>
+            Check result, and get response
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EGID.Api.Controllers.BaseController.GetApiResponse``1(EGID.Service.Models.ServiceResultDetail{``0})">
+            <summary>
+            Check detail result, and get response
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EGID.Api.Controllers.BaseController.GetApiResponse``1(EGID.Service.Models.ServiceResultList{``0},System.Int32,System.Int32)">
+            <summary>
+            Check result, set paging header, and get response
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="result"></param>
+            <param name="page"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EGID.Api.Controllers.BaseController.GetApiResponse``1(EGID.Service.Models.ServiceResultDetail{``0},System.Int32,System.Int32)">
+            <summary>
+            Check detail result, set paging header, and get response
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="result"></param>
+            <param name="page"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EGID.Api.Controllers.BaseController.SetPaginationHeader(System.Int32,System.Int32,System.Int64)">
+            <summary>
+            Prepare and Set the X-Pagination Header to the Response
+            </summary>
+            <param name="page">current page number</param>
+            <param name="pageSize">page size</param>
+            <param name="totalCount">total count</param>
+        </member>
+        <member name="M:EGID.Api.Controllers.StocksController.#ctor(System.Lazy{EGID.Service.Feature.Stocks.Interfaces.Services.IStocksService})">
+            <summary>
+            Academic-Level Constructor
+            </summary>
+            <param name="stocksService"></param>
+        </member>
+        <member name="P:EGID.Api.Controllers.StocksController.StocksService">
+            <summary>
+            Get list of stocks
+            </summary>
+            <returns>list of stocks</returns>
+        </member>
+        <member name="T:EGID.Api.Helper.CurrentDirectoryHelpers">
+            <summary>
+            Work around for the Directory.GetCurrentDirectory() get the right path while inprocess
+            </summary>
+        </member>
+        <member name="T:EGID.Api.Helper.LoggerHelper">
+            <summary>
+            LoggerHelper
+            </summary>
+        </member>
+        <member name="T:EGID.Api.Notifiers.StockConcreteNotifier">
+            <summary>
+            StocksConcreteNotifier
+            </summary>
+        </member>
+        <member name="M:EGID.Api.Notifiers.StockConcreteNotifier.#ctor(System.Lazy{Microsoft.AspNetCore.SignalR.IHubContext{EGID.Api.SignalRHubs.StocksHub}})">
+            <summary>
+            StocksConcreteNotifier
+            </summary>
+            <param name="stocksHub"></param>
+        </member>
+        <member name="T:EGID.Api.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:EGID.Api.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:EGID.Api.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            CreateWebHostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EGID.Api.SignalRHubs.StocksHub.#ctor(System.Lazy{EGID.Service.Feature.Stocks.Interfaces.Services.IStocksService})">
+            <summary>
+            Academic-Level Constructor
+            </summary>
+            <param name="stocksService"></param>
+        </member>
+        <member name="M:EGID.Api.SignalRHubs.StocksHub.GetStocks">
+            <summary>
+            GetStocks
+            </summary>
+            <returns>Get Stocks</returns>
+        </member>
+        <member name="M:EGID.Api.SignalRHubs.StocksHub.GetCertainStock(System.Int32)">
+            <summary>
+            Get Certain Stock
+            </summary>
+            <param name="stockId"></param>
+            <returns>Get Certain Stock</returns>
+        </member>
+        <member name="T:EGID.Api.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:EGID.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Startup
+            </summary>
+            <param name="configurations"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:EGID.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureServices
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EGID.Api.Startup.ConfigureIoC(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureIoC
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EGID.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,EGID.Api.Background.IEGIDBackgroundConfiguration,EGID.Service.Features.Common.Interfaces.IEGIDEntities,EGID.Service.Features.Common.Interfaces.Helpers.IBackgroundSchedular)">
+            <summary>
+            Configure
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="errorLogger"></param>
+            <param name="EGIDBackgroundConfiguration"></param>
+            <param name="context"></param>
+            <param name="schedular"></param>
+        </member>
+    </members>
+</doc>

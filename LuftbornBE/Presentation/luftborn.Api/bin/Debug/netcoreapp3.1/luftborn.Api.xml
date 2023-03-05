@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>luftborn.Api</name>
+    </assembly>
+    <members>
+        <member name="M:luftborn.Api.Controllers.EmployeeController.#ctor(System.Lazy{luftborn.Service.Feature.Employees.Interfaces.Services.IEmployeeService})">
+            <summary>
+            Academic-Level Constructor
+            </summary>
+            <param name="employeeService"></param>
+        </member>
+        <member name="M:luftborn.Api.Controllers.EmployeeController.SaveEmployee(luftborn.DTO.Models.DTOEmployee)">
+            <summary>
+            save employee
+            </summary>
+            <returns>successs</returns>
+            <param name="employee"></param>
+        </member>
+        <member name="M:luftborn.Api.Controllers.EmployeeController.GetEmployees">
+            <summary>
+            gets list of employee
+            </summary>
+            <returns>list of employee</returns>
+        </member>
+        <member name="M:luftborn.Api.Controllers.EmployeeController.DeleteEmployee(System.Int32)">
+            <summary>
+            delete employee
+            </summary>
+            <returns>list of employee</returns>
+            <param name="id"></param>
+        </member>
+        <member name="M:luftborn.Api.Controllers.EmployeeController.EditEmployee(luftborn.DTO.Models.DTOEmployee)">
+            <summary>
+            edit employee
+            m
+            </summary>
+            <returns>list of employee</returns>
+            <param name="model"></param>
+        </member>
+        <member name="T:luftborn.Api.Controllers.BaseController">
+            <summary>
+            BaseController
+            </summary>
+        </member>
+        <member name="M:luftborn.Api.Controllers.BaseController.GetErrorResult(luftborn.Service.Models.ServiceResultBase)">
+            <summary>
+            Get result with status code based on model errors
+            </summary>
+            <param name="result">result</param>
+            <returns>action result</returns>
+        </member>
+        <member name="M:luftborn.Api.Controllers.BaseController.GetApiResponse``1(luftborn.Service.Models.ServiceResultList{``0})">
+            <summary>
+            Check result, and get response
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:luftborn.Api.Controllers.BaseController.GetApiResponse``1(luftborn.Service.Models.ServiceResultDetail{``0})">
+            <summary>
+            Check detail result, and get response
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:luftborn.Api.Controllers.BaseController.GetApiResponse``1(luftborn.Service.Models.ServiceResultList{``0},System.Int32,System.Int32)">
+            <summary>
+            Check result, set paging header, and get response
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="result"></param>
+            <param name="page"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:luftborn.Api.Controllers.BaseController.GetApiResponse``1(luftborn.Service.Models.ServiceResultDetail{``0},System.Int32,System.Int32)">
+            <summary>
+            Check detail result, set paging header, and get response
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="result"></param>
+            <param name="page"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:luftborn.Api.Controllers.BaseController.SetPaginationHeader(System.Int32,System.Int32,System.Int64)">
+            <summary>
+            Prepare and Set the X-Pagination Header to the Response
+            </summary>
+            <param name="page">current page number</param>
+            <param name="pageSize">page size</param>
+            <param name="totalCount">total count</param>
+        </member>
+        <member name="T:luftborn.Api.Helper.CurrentDirectoryHelpers">
+            <summary>
+            Work around for the Directory.GetCurrentDirectory() get the right path while inprocess
+            </summary>
+        </member>
+        <member name="T:luftborn.Api.Helper.LoggerHelper">
+            <summary>
+            LoggerHelper
+            </summary>
+        </member>
+        <member name="T:luftborn.Api.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:luftborn.Api.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:luftborn.Api.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            CreateWebHostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:luftborn.Api.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:luftborn.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Startup
+            </summary>
+            <param name="configurations"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:luftborn.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureServices
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:luftborn.Api.Startup.ConfigureIoC(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureIoC
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:luftborn.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,luftborn.Service.Features.Common.Interfaces.IluftbornEntities)">
+            <summary>
+            Configure
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="errorLogger"></param>
+            <param name="context"></param>
+            <param name="schedular"></param>
+        </member>
+    </members>
+</doc>

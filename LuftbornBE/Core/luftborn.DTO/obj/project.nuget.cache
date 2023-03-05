@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gnq3Ee7XdIzWwV8LHQB3qXcCpHfv7wvJNXay4czE01HwKnC2XIYflQ4S9XfnqYH/B8156FbgEgRNtSKMah3dLw==",
+  "success": true,
+  "projectFilePath": "E:\\Coding project\\luftborn\\LuftbornBE\\Core\\luftborn.DTO\\luftborn.DTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dell\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
